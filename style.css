@@ -12,6 +12,7 @@ body{
     font-size: 40px;
 }
 
+
 .login-content{
     padding: 40px;
     position: absolute;
@@ -31,6 +32,8 @@ body{
 }
 
 .user-box input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
     outline: none;
     color: white;
     font-size: 24px;
@@ -72,4 +75,13 @@ body{
 .login-content button:hover{
     background-color: #23CE6B;
     color: white;
+}
+
+img, a{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-105%, -105%);
+    width: 60px;
+    height: 60px;
 }
