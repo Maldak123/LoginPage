@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Futura;
+    color: white;
+    background-color: #333;
+}
+
+.login-content h2{
+    font-size: 30px;
+}
+
+.login-content{
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #272D2D;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.user-box{
+    position: relative;
+    margin-top: 50px;
+    color: #23CE6B;
+}
+
+.user-box input{
+    outline: none;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-bottom: solid 1px #23CE6B;
+    background: none;
+    width: 100%;
+}
+
+.user-box label{
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.login-content button{
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #23CE6B;
+    border: solid 1px #23CE6B;
+    width: 100px;
+    height: 50px;
+}
