@@ -9,7 +9,7 @@ body{
 }
 
 .login-content h2{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .login-content{
@@ -41,20 +41,35 @@ body{
 }
 
 .user-box label{
+    color: white;
     pointer-events: none;
     position: absolute;
     left: 0;
     top: 0;
+    transition: .3s;
+}
+
+.user-box input:focus ~ label, .user-box input:valid ~ label{
+    font-size: 14px;
+    color: #23CE6B;
+    top: -20px;
 }
 
 .login-content button{
-    border: none;
-    padding: 5px;
-    font-size: 20px;
+    margin: 0 auto;
+    font-family: Futura;
+    font-size: 25px;
     border-radius: 4px;
     background-color: transparent;
     color: #23CE6B;
     border: solid 1px #23CE6B;
-    width: 100px;
-    height: 50px;
+    width: 140px;
+    height: 60px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.login-content button:hover{
+    background-color: #23CE6B;
+    color: white;
 }
