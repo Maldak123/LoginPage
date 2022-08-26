@@ -9,9 +9,10 @@ body{
 }
 
 .login-content h2{
-    font-size: 40px;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
 }
-
 
 .login-content{
     padding: 40px;
@@ -27,20 +28,22 @@ body{
 
 .user-box{
     position: relative;
-    margin-top: 50px;
+    margin-top: 40px;
     color: #23CE6B;
 }
 
 .user-box input{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 100;
     outline: none;
     color: white;
+    font-family: Segoe UI;
+    font-weight: 100;
     font-size: 24px;
     border: none;
     border-bottom: solid 1px #23CE6B;
     background: none;
     width: 100%;
+    height: 38px;
+    align-content: center;
 }
 
 .user-box label{
@@ -48,40 +51,55 @@ body{
     pointer-events: none;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     transition: .3s;
 }
 
 .user-box input:focus ~ label, .user-box input:valid ~ label{
-    font-size: 14px;
+    font-size: 12px;
     color: #23CE6B;
-    top: -20px;
+    top: -7px;
+}
+
+.user-options{
+    margin-top: 20px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-options a{
+    width: fit-content;
+    font-family: Segoe UI;
+    text-decoration: none;
+    color: #6A7A7A;
+}
+
+.user-options a:hover{
+    color: #23CE6B;
 }
 
 .login-content button{
-    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
     font-family: Futura;
-    font-size: 25px;
+    padding: 5px;
+    font-size: 20px;
     border-radius: 4px;
     background-color: transparent;
     color: #23CE6B;
     border: solid 1px #23CE6B;
-    width: 140px;
-    height: 60px;
+    width: 100px;
+    height: 50px;
     cursor: pointer;
     transition: .3s;
 }
 
 .login-content button:hover{
+    width: 100%;
     background-color: #23CE6B;
     color: white;
-}
-
-img, a{
-    position: absolute;
-    top: 100%;
-    left: 100%;
-    transform: translate(-105%, -105%);
-    width: 60px;
-    height: 60px;
 }
